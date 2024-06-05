@@ -1,0 +1,152 @@
+/*resetear estilos {}*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*estilizar cuerpo*/
+body{background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    font-style: normal;
+
+} 
+/* Estilos para la barra de navegación en el encabezado */
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    height: 80px;
+    font-size: 16px;
+    padding: 0 16px;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+  }
+
+/*estilizar el icono*/
+header nav img#youtube-icon{
+    margin-bottom: 10px;
+width: 130px;
+height: 70px;
+padding: 4px ;
+
+
+} 
+
+/*estilo cuando pasa mouse en icono*/
+header nav img#youtube-icon:hover{
+    background-color: gray;
+    border-radius: 150px ;
+}
+
+header nav{
+    .menu{display: flex;}
+}
+
+
+/* estilo al primer elemento de navegación first  */
+.first{
+    display: flex;
+
+}
+/*estilos para enlaces en primer elemento barra*/
+.first a{
+    text-decoration: none;
+    color: black;
+}
+/*Estilos elementos listas dentro primer elemento barra de navegación*/
+.first li{
+    list-style: none;
+    padding: 0 12px;
+}
+/*Estilos enlace inico del primer elemento de la barra de navegación*/
+.first li #todos {
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 25px;
+    padding: 10px 10px 10px;
+}
+
+
+.menu {
+    display: none;
+} 
+.opciones {display:flex}
+/*estilos menú desplegable*/
+.search{
+    flex-grow: 1;
+    height: 48px;
+    background-color: bisque;
+    border-radius: 30px;
+}
+.search:hover {
+    background-color: grey;
+}
+
+.search:focus-within {
+    border: 4px solid blue;
+}
+/* estilos barra de busqueda*/
+
+.barra   {display:flex;
+align-items: center;
+height: 48px;
+
+}
+    
+.lupa {
+    padding: 4px;
+    color: gray;
+    font-size: 20px;
+    font-weight: 20px;
+}
+.barra inpunt {
+    border: none;
+    outline: none;
+    background-color: none;
+    padding: 0 8px 0 0;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+/*estilos iconos de la derecha*/
+.right-items {
+    padding: 8px;
+    color: gray;
+    font-size: 28px;
+}
+
+/*estilos a elementos lado derech*/
+.right-items:hover{
+background-color: blueviolet;
+}
+/*estilos contenido principal*/
+.contenido {
+   position: absolute;
+   margin-top: 80px;
+   padding-right: 5px;
+}
+/* estilo contenedor imagenes*/
+.imagenes {
+    columns: 3 50px;
+    margin: auto;
+}
+/*estilos a imagenes dentro contenedor*/
+.imagenes .card-image img{
+    border-radius: 5%;
+    min-width: 300px;
+    max-width: 300px;
+}
+/*efecto imagen cuando pasas encima*/
+
+.card-image:hover > :first-child {
+    filter:brightness(20%);
+  }
+/* mostrar elementos cuando pasa*/
+.card-image:hover > * {
+    visibility: visible;
+    display: inline;
+  }
